@@ -9,8 +9,8 @@ This guide is designed to walk you through the process of creating a robust DevO
 - Terraform
 - Git
 
-## 1. Setting Up a GitLab/GitHub Account
-### 1.1 Introduction to GitLab/GitHub
+## 1. Setting Up a GitLab Account
+### 1.1 Introduction to GitLab
 GitLab is a web-based Git repositories that provide a centralized location to manage your code, along with tools for version control and collaboration.
 
 ### 1.2 Creating an Account
@@ -92,9 +92,11 @@ resource "aws_iam_role_policy" "s3_policy" {
 
 Run terraform init and terraform apply to create the role and attach it to your EC2 instance.
 
-## 5. Setting Up a CI/CD Pipeline in GitLab/GitHub
+## 5. Setting Up a CI/CD Pipeline in GitLab
 ### 5.1 Introduction to CI/CD Pipelines
 CI/CD pipelines automate your software delivery process. The pipeline builds code, runs tests (CI), and safely deploys a new version of the application (CD).
 
 ### 5.2 Creating a Pipeline for AWS Lambda Deployment
-In GitLab/GitHub, create a .gitlab-ci.yml or .github/workflows file respectively. Define steps for building your application, running tests, and deploying to AWS Lambda. Use AWS CLI commands in your pipeline script to interact with AWS services.
+In GitLab, create a .gitlab-ci.yml file respectively. Define steps for building your application, running tests, and deploying to AWS Lambda. Use AWS CLI commands in your pipeline script to interact with AWS services.
+
+Please note examples are not complete or accurate as these are jumping points as you begin learning.
